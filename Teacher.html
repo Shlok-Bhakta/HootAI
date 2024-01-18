@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Equal width columns */
+            grid-gap: 10px;
+            max-width: 400px; /* Set a maximum width for the form */
+            width: 100%; /* Take up the full width of the container */
+            margin: auto; /* Center the form horizontally */
+            align-items: center; /* Center the form vertically */
+            justify-content: center; /* Center the form horizontally and vertically */
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 15px; /* Adjust the padding to control the height of each box */
+            border: 1px solid grey; /* optional: add border for better appearance */
+            color: grey;
+            box-sizing: border-box; /* Include padding and border in the total width/height */
+          
+
+            /* Default styles for width and height */
+            width: 100%;
+            height: 100%;
+
+            /* Placeholder styles */
+            text-align: center; /* Center the text within the input box */
+            font-weight: bold; /* Bold the placeholder text */
+            color: grey; /* Placeholder text color */
+            
+        }
+
+        /* Custom styles for each box */
+        input[name="bluebutton"] {
+            width: 500px; /* Adjust the width of this box */
+            height: 250px; /* Adjust the height of this box */
+            background-color: #3498db; /* Blue color */
+        }
+
+        input[name="greenbutton"] {
+            width: 500px; /* Adjust the width of this box */
+            height: 250px; /* Adjust the height of this box */
+            background-color: #2ecc71; /* Green color */
+        }
+
+        input[name="redbutton"] {
+            width: 500px; /* Adjust the width of this box */
+            height: 250px; /* Adjust the height of this box */
+            background-color: #e74c3c; /* Red color */
+        }
+
+        input[name="orangebutton"] {
+            width: 500px; /* Adjust the width of this box */
+            height: 250px; /* Adjust the height of this box */
+            background-color: #f39c12; /* Orange color */
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="questionInput" placeholder="Type your question...">
+    <div style="flex-grow: 1;"></div>
+    <form action="/form" method="post">
+        <input type="text" name="bluebutton" placeholder="Type Answers">
+        <input type="text" name="greenbutton" placeholder="Type Answers">
+        <input type="text" name="redbutton" placeholder="Type Answers">
+        <input type="text" name="orangebutton" placeholder="Type Answers">
+    </form>
+</body>
+
+</html>

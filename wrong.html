@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>My Page</title>
+    <style>
+        body {
+            background-color: #EB9773;
+            padding-top: 5%;
+        }
+        .anotherone{
+            display: flex;
+            justify-content: center; /* aligns the item horizontally */
+            align-items: center; /* aligns the item vertically */
+        }
+        .checkmark {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0 0 10px red;
+            position: relative;
+        }
+        .checkmark i {
+            color: red;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .message {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .chatbox {
+            border: 2px solid black;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="message" style="font-size: 50pt">+0</div>
+    <div class="message" style="font-size: 70pt">Try Again</div>
+    <div class="anotherone">
+        <div class="checkmark">
+            <i class="fa fa-times"></i>
+        </div>
+    </div>
+    <div class="anotherone">
+        <div class="chatbox">
+            <!-- This is where you can add your chatbot response -->
+        </div>
+    </div>
+</body>
+</html>
